@@ -1,0 +1,62 @@
+.create-player {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.create-player h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e63946;
+}
+
+.create-player form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-player label {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.create-player input[type="text"],
+.create-player select,
+.create-player textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  resize: vertical;
+}
+
+.create-player input[type="text"]::placeholder,
+.create-player textarea::placeholder {
+  color: #999999;
+}
+
+.create-player button {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #e63946;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-player button:hover {
+  background-color: #a62b33;
+}
+
+

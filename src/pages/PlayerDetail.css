@@ -1,0 +1,24 @@
+/* PlayerDetail.css */
+.player-detail {
+  background-color: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  color: #edefe4;
+}
+
+.player-detail h1 {
+  margin-bottom: 1rem;
+}
+
+.player-detail button {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  font-weight: bold;
+}

@@ -1,0 +1,76 @@
+.edit-player {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.edit-player h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e63946;
+}
+
+.edit-player form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-player label {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.edit-player input[type="text"],
+.edit-player select,
+.edit-player textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  resize: vertical;
+}
+
+.edit-player input[type="text"]::placeholder,
+.edit-player textarea::placeholder {
+  color: #999999;
+}
+
+.edit-player .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.edit-player button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.edit-player button[type='submit'] {
+  background-color: #e63946;
+}
+
+.edit-player button[type='submit']:hover {
+  background-color: #a62b33;
+}
+
+.edit-player .delete-button {
+  background-color: #666666;
+}
+
+.edit-player .delete-button:hover {
+  background-color: #444444;
+}
