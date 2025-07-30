@@ -12,6 +12,8 @@ const EditPlayer = () => {
     status: '',
     role: '',
     description: '',
+    age: '',    // added age
+    skill: '',  // added skill
   });
   const [loading, setLoading] = useState(true);
 
@@ -33,6 +35,8 @@ const EditPlayer = () => {
           status: data.status || '',
           role: data.role || '',
           description: data.description || '',
+          age: data.age || '',      // load age if exists
+          skill: data.skill || '',  // load skill if exists
         });
       }
       setLoading(false);
@@ -62,6 +66,8 @@ const EditPlayer = () => {
         status: player.status,
         role: player.role,
         description: player.description,
+        age: player.age,
+        skill: player.skill,
       })
       .eq('id', id);
 
@@ -141,6 +147,26 @@ const EditPlayer = () => {
           rows={5}
         />
 
+        {/* New inputs for age and skill */}
+        <label>Age:</label>
+        <input
+          type="number"
+          name="age"
+          value={player.age}
+          onChange={handleChange}
+          placeholder="Player's age"
+          min="0"
+        />
+
+        <label>Skill:</label>
+        <input
+          type="text"
+          name="skill"
+          value={player.skill}
+          onChange={handleChange}
+          placeholder="Player's skill"
+        />
+
         <div className="buttons">
           <button type="submit">Update Player</button>
           <button className="delete-button" onClick={handleDelete}>
@@ -153,3 +179,4 @@ const EditPlayer = () => {
 };
 
 export default EditPlayer;
+

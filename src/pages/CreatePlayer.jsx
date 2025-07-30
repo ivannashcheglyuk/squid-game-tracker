@@ -35,8 +35,7 @@ const CreatePlayer = () => {
           status: player.status,
           role: player.role,
           description: player.description,
-          age: player.age,
-          skill: player.skill,
+          
         },
       ]);
 
@@ -95,23 +94,7 @@ const CreatePlayer = () => {
           rows="5"
         ></textarea>
 
-        <label>Age</label>
-        <input
-          type="number"
-          name="age"
-          value={player.age}
-          onChange={handleChange}
-          placeholder="Player's age"
-        />
-
-        <label>Skill</label>
-        <input
-          type="text"
-          name="skill"
-          value={player.skill}
-          onChange={handleChange}
-          placeholder="Player's skill"
-        />
+    
 
         <button type="submit">Create Player</button>
       </form>
