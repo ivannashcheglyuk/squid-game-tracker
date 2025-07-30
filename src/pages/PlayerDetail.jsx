@@ -33,6 +33,8 @@ const PlayerDetail = () => {
   if (loading) return <p>Loading player details...</p>;
   if (!player) return null;
 
+  
+
   return (
     <div className="player-detail">
       <h1>{player.name}</h1>
@@ -41,6 +43,9 @@ const PlayerDetail = () => {
       <p><strong>Role:</strong> {player.role}</p>
       <p><strong>Description:</strong></p>
       <p>{player.description}</p>
+
+      <h3>Age: {player.age}</h3>
+     <h3>Skill: {player.skill}</h3>
 
       {/* Link to edit page */}
       <Link to={`/edit/${player.id}`}>

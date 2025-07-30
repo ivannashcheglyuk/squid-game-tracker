@@ -9,6 +9,8 @@ const CreatePlayer = () => {
     status: '',
     role: '',
     description: '',
+    age: '',
+    skill: '',
   });
 
   const handleChange = (e) => {
@@ -33,20 +35,14 @@ const CreatePlayer = () => {
           status: player.status,
           role: player.role,
           description: player.description,
+          age: player.age,
+          skill: player.skill,
         },
       ]);
 
-  
-
-if (error) {
-  console.error('Error inserting player:', error.message, error.details);
-  alert(`Failed to create player: ${error.message}`);
-
-
-
-
-
-
+    if (error) {
+      console.error('Error inserting player:', error.message, error.details);
+      alert(`Failed to create player: ${error.message}`);
     } else {
       // Redirect to home page after successful creation
       window.location = '/';
@@ -57,7 +53,6 @@ if (error) {
     <div className="create-player">
       <h2>Create New Player</h2>
       <form onSubmit={handleSubmit}>
-
         <label>Name</label>
         <input
           type="text"
@@ -100,6 +95,24 @@ if (error) {
           rows="5"
         ></textarea>
 
+        <label>Age</label>
+        <input
+          type="number"
+          name="age"
+          value={player.age}
+          onChange={handleChange}
+          placeholder="Player's age"
+        />
+
+        <label>Skill</label>
+        <input
+          type="text"
+          name="skill"
+          value={player.skill}
+          onChange={handleChange}
+          placeholder="Player's skill"
+        />
+
         <button type="submit">Create Player</button>
       </form>
     </div>
@@ -107,3 +120,4 @@ if (error) {
 };
 
 export default CreatePlayer;
+
