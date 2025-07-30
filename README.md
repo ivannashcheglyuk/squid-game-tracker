@@ -48,8 +48,12 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+Please note: The walkthrough is split into two parts.
 
+Part1:
 <img src='https://github.com/ivannashcheglyuk/squid-game-tracker/blob/main/project8.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Part2:
+<img src='https://github.com/ivannashcheglyuk/squid-game-tracker/blob/main/project8part(2).gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with Bandicam and EZGIF.
 
